@@ -1,79 +1,121 @@
-# Stan TV ReactJS Coding Challenge
 
-> Welcome to the Stan TV ReactJS Coding Challenge!
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Overview
+[![Product Name Screen Shot][requirement-home-page]](https://example.com)
 
-The purpose of this challenge is to assess your knowledge around composing a **simple React/Typescript single-page application** closely following the guidelines and requirements.
+This project is my solution to a Stan TV frontend coding challenge.
 
-This challenge is expected to take around 6-8 hours.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Guidelines
 
-- The application should be built using [Babel](https://www.babeljs.io) along with [webpack](https://webpack.js.org) into a `dist` folder containing four files (`app.js`, `styles.css`, `logo.svg` and `index.html`).
-- Your solution should be implemented using:
-  - [TypeScript](https://www.typescriptlang.org)
-  - [Babel](https://babeljs.io)
-  - [Webpack](https://webpack.js.org)
-  - [Jest](https://jestjs.io)
-  - [React](https://facebook.github.io/react/)
-  - [Redux](https://redux.js.org) (optional)
-  - [Styled Components](https://www.styledcomponents.com) (optional)
-  - [React Router](https://www.reactrouter.com) (optional)
+### Built With
 
-- You should avoid using any other JS/CSS frameworks/libraries.
-- The application should be responsive and support both 720p and 1080p screen sizes.
-- All text should be rendered using the "Open Sans" font.
-- We are looking for solutions that are **simple, modern, performant, and tested**
+The key tech stack used in this project is Node.js, React, TypeScript, Webpack, Babel and Jest.
 
-## Requirements
+* [![React][React.js]][React-url]
+* Node.js
+* TypeScript
+* Webpack
+* Babel
+* Jest
 
-You will need to build the following 2 pages with React:
 
-### "Home" Page
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[home.jpg](./home.jpg)
 
-- This page should consist of the layout along with a **simple and reusable** carousel.
-- The provided sample data ([data.json](./data.json)) should be retrieved using the fetch API.
-- Each image in the carousel should link to a "Program" page.
-- Navigation between images in the carousel should be handled using the `left`, `right` and `enter` keyboard keys.
-- No more than six carousel images should be in the DOM at any time.
-- When the UI is in a loading state render a skeleton. ([home-loading.jpg](./home-loading.jpg)).
-- When an error occurs an error message message should be rendered. ([error.jpg](./error.jpg))
-- This functionality should be unit tested.
 
-### "Program" Page
+<!-- GETTING STARTED -->
+## Getting Started
 
-[program.jpg](./program.jpg)
 
-- This page should consist of the layout along with a program overview.
-- The program to display should be determined by the ID.
-- You should only fetch the provided sample data if the "Home" page has not been visited first.
-- Pressing the `backspace` keyboard key should take you back to the "Home" page.
-- When the UI is in a loading state render a skeleton. ([program-loading.jpg](./program-loading.jpg)).
-- When an error occurs an error message message should be rendered. ([error.jpg](./error.jpg))
-- This functionality should be unit tested.
+### Prerequisites
 
+It is recommended that you install a later version of node.js. The version I used is v20.11.0 for your reference. If you are new to node.js,
+check [Introduction to Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) and [Download Nodejs](https://nodejs.org/en/download) to learn how to install and use nodejs.
+
+I would highly recommend you to use Visual Studio Code as your IDE. You can download [here](https://code.visualstudio.com/).
+Besides, you might also want to install React VS Code extension.
+
+Another essential tool you would want to get ready is [React Developer Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?pli=1). You will find it very useful for debugging. Once installed correctly on Chrome browser, you should see 'Components' and 'Profiler' tabs.
+
+
+### Installation
+
+Below installation process is not a detailed instruction of how I scaffolded the project from scratch. Every configuration and tooling integration is already configured prior. This should be viewed as a simple step to setup the project locally and start develop in React. 
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/JustinHu8/react-js-coding-challenge.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+   You could also try using other package management tools, such as pnpm or yarn for practicing purpose.
+3. Once all your npm libraries correctly installed in node_modules, you can run
+   ```sh
+   npm run start
+   ```
+   to load the project on localhost.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Test and Build
+
+To test the project, you can run 
+   ```sh
+   npm run test
+   ```
+Due to time limit, there is no tests yet, but I may do some later :)
+
+To build the project
+   ```sh
+   npm run build
+   ```
+
+<!-- Q & A -->
 ## Other Notes
 
-Please also include a `README` with setup instructions, and any tests or other documentation you created as part of your solution.
+### Technical and architectural choices
+I would not say I have made some major technical or architectural.
+The choices of tech stack is in the requirement. I did think about adding Redux and React Router in the mix, but they doens't seem to as important for the purpose of this project. To save time, I have decided to leave them out. 
+The file and folder structure inside /src folder is a common convention I have seem very often and working well, so decided to use it directly.  
 
-Also, add the following info to your `README`:
+### improvements I wish to make
+If I have more time I would write more unit tests.
+There are a lot of fine tuning improvements can be done on webpack configuration to optimize the scripts, assets and building process.
+Clean up CSS structure.
+Rethinking and optimize component hierarchy.
 
-- How did you decide on the technical and architectural choices used as part of your solution?
-- Are there any improvements you could make to your submission?
-- What would you do differently if you were allocated more time?
+### What would you do differently
+Haha. There are too many aspect I wish I have time to detailing.
+Probably the one that's most interesting is the carousel. 
+Certainly, a lot of research and improvement can be made from performance and user experience perspective. Such as how to code it in a way that similiar to infinite scrolling. The first slider should show next once the user get to the very end of the slide. 
 
-Please also ensure your commit history is available upon submission.
 
-We are also interested in looking at any other code or projects that you're proud of and would like to share with us.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Any feedback on the coding challenge once you're done is also appreciated!
 
-## Contact Us
 
-If you have any questions feel free to email us:
 
-[dev-team@stan.com.au](dev-team@stan.com.au)
+
+<!-- CONTACT -->
+## Contact
+
+Justin Hu - justinhu-cg@msn.com
+
+Project Link: [https://github.com/JustinHu8/react-js-coding-challenge](https://github.com/JustinHu8/react-js-coding-challenge)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[requirement-home-page]: docs/images/home.jpg
+[requirement-program-page]: docs/images/program.jpg
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
 
